@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class ValidMobile 
+public class RuleOne
 {
 	public static boolean patternMatching( String pattern ) 
 	{
-	   return pattern.matches( "^([9]{1}[1]{1}([\\\\w ]+)[1-9]{1}[0-9]{9})$" );
+	   return pattern.matches( "^([A-Z a-z]{8,})$" );
 	}
 	   
 	public static void main( String[] args ) 
@@ -13,6 +13,6 @@ public class ValidMobile
 	   		   
 	   System.out.println("Enter the pattern");
 	   String pattern = scan.nextLine();
-       System.out.println(patternMatching(pattern));
+      System.out.println(patternMatching(pattern));
 	}
 }
