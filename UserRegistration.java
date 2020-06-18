@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ValidFirstName 
+public class ValidLastName 
 {
 	public static boolean patternMatching( String pattern ) 
 	{
@@ -11,12 +11,11 @@ public class ValidFirstName
 	{
 	   Scanner scan = new Scanner(System.in);	
 	   		   
-	   System.out.println("Enter the pattern");
+	   System.out.println("\nEnter the pattern");
 	   String pattern = scan.nextLine();
       System.out.println(patternMatching(pattern));
 	}
 }
-
 
 
 
