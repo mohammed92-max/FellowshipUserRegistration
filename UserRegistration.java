@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class RuleTwo
+public class RuleThree 
 {
 	public static boolean patternMatching( String pattern ) 
 	{
-	   return pattern.matches( "([A-Z{1,} a-z]{7,})$" );
+	   return pattern.matches( "([0-9{1,} A-Z{1,} a-z]{7,})$" );
 	}
 	   
 	public static void main( String[] args ) 
