@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class RuleOne
+public class RuleTwo
 {
 	public static boolean patternMatching( String pattern ) 
 	{
-	   return pattern.matches( "^([A-Z a-z]{8,})$" );
+	   return pattern.matches( "([A-Z{1,} a-z]{7,})$" );
 	}
 	   
 	public static void main( String[] args ) 
@@ -13,6 +13,6 @@ public class RuleOne
 	   		   
 	   System.out.println("Enter the pattern");
 	   String pattern = scan.nextLine();
-      System.out.println(patternMatching(pattern));
+       System.out.println(patternMatching(pattern));
 	}
 }
