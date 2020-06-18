@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class ValidEmail 
+public class ValidMobile 
 {
 	public static boolean patternMatching( String pattern ) 
 	{
-	   return pattern.matches( "^([a-z][a-z 0-9 \\ ]*[@][a-z]*[.][a-z . ]*)$" );
+	   return pattern.matches( "^([9]{1}[1]{1}([\\\\w ]+)[1-9]{1}[0-9]{9})$" );
 	}
 	   
 	public static void main( String[] args ) 
